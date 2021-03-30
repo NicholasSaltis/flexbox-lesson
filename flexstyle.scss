@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    background-color: rgb(208, 252, 230);
+    width: 100%;
+    height: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+    
+    
+}
+@mixin child-box {
+    background-color: #ff0000;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.box {
+    @include child-box();
+
+    
+}
+.box1 {
+    @include child-box();
+    
+}
+
